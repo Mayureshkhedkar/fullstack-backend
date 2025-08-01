@@ -23,8 +23,7 @@
 #
 # ENTRYPOINT ["java", "-jar", "app.jar"]
 # Stage 1: Build
-FROM maven:3.9.4-eclipse-temurin-21 AS builder
-
+FROM maven:3.9.8-eclipse-temurin-21
 WORKDIR /app
 
 COPY pom.xml .
