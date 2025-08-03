@@ -19,5 +19,4 @@ Thumbs.db
 # Docker ignore file itself
 .dockerignore
 
-# Optional: skip test resources (if not needed in your image)
-src/test/
+# Optional: skip test resources
