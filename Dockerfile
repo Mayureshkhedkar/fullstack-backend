@@ -13,7 +13,7 @@
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
 
-##this compiles the whole project into a container "build"
+#this compiles the whole project into a container "build"
 #From maven:3.9.4-eclipse-temurin-21-alpine AS build
 #COPY . .
 #RUN mvn clean package -Dskiptests
