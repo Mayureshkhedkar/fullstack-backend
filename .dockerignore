@@ -1,4 +1,23 @@
+# Ignore target directory to avoid copying build artifacts from host
 target/
+
+# Maven and IDE config files
+*.iml
+.idea/
+*.log
+*.md
+*.swp
+
+# OS-specific or editor clutter
+.DS_Store
+Thumbs.db
+
+# Git-related files
 .git
 .gitignore
-README.md
+
+# Docker ignore file itself
+.dockerignore
+
+# Optional: skip test resources (if not needed in your image)
+src/test/
