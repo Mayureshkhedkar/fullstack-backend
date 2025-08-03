@@ -21,6 +21,6 @@ RUN mvn clean package -Dskiptests
 
 #this here is used to store that container into are root directory and run the build
 FROM openjdk:21-jdk-slim
-COPY --from=build /target/FullstackBackendApplication-0.0.1-SNAPSHOT.jar demo.jar
+COPY --from=build --from=build /target/*.jar demo.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","demo.jar"]
