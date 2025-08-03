@@ -1,4 +1,4 @@
- FROM maven:3.9.4-eclipse-temurin-21-alpine AS build
+ FROM maven:3.9.8-eclipse-temurin-21 AS build
  WORKDIR /FullstackBackendApplication
  COPY pom.xml .
  COPY src ./src
