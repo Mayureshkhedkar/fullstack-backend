@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://vercel.com/mayuresh-khedkars-projects/fullstack-frontend")
 public class UserController {
     @Autowired
     private UserRepository userRepository;
