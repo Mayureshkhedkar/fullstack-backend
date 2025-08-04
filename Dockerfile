@@ -8,4 +8,5 @@ RUN mvn clean package -Dskiptests
 FROM openjdk:21-jdk-slim
 COPY --from=build /target/fullstack-backend-0.0.1-SNAPSHOT.jar demo.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-cp","fullstack-backend-0.0.1-SNAPSHOT.jar","com.codedbymk.fullstack_backend.FullstackBackendApplication"]
+#ENTRYPOINT ["java","-cp","fullstack-backend-0.0.1-SNAPSHOT.jar","com.codedbymk.fullstack_backend.FullstackBackendApplication"]
+ENTRYPOINT ["java","-jar","demo.jar"]
