@@ -12,6 +12,7 @@
 	<artifactId>fullstack-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fullstack-backend</name>
+	<packaging>jar</packaging>
 	<description>this is a project </description>
 	<url/>
 	<licenses>
